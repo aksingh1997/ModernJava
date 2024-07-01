@@ -35,13 +35,13 @@ public class Controller {
         return  employeeService.getEmployeeList();
     }
 
-    @PutMapping("streams/employee/increment/{id}/{increment}")
+    @PutMapping("streams/employee/incrementById/{id}/{increment}")
     public String incrementSalary(@PathVariable int id, @PathVariable int increment) {
         employeeService.incrementSalaryById(id, increment);
         return "Salary incremented!";
     }
 
-    @PutMapping("streams/employee/increment/{name}/{increment}")
+    @PutMapping("streams/employee/incrementByName/{name}/{increment}")
     public String incrementSalary(@PathVariable String name, @PathVariable int increment) {
         employeeService.incrementSalaryByName(name, increment);
         return "Salary incremented!";

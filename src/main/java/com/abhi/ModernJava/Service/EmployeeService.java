@@ -12,7 +12,7 @@ import java.util.stream.Stream;
 @Service
 public class EmployeeService {
 
-    private final ArrayList<Employee> employeeList;
+    private ArrayList<Employee> employeeList;
 
     EmployeeService() {
         this.employeeList = new ArrayList<>();
